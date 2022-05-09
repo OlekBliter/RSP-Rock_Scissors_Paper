@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>RSP</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <div class="top-card">
+                <h1>Rock<br>Scissors<br>Paper</h1>
+                <div class="score-box">
+                    <h1>Score</h1>
+                    <div class="score-count">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="mid-card">
+                <div class="time-part">
+                    <div class="time-count">3</div>
+                </div>
+                <div class="circle-part">
+                    <div class="user-circle circle">
+                        <img id="userHand" src="img/hand.png" alt="">
+                    </div>
+                    <div class="computer-circle circle">
+                        <img id="computerHand" src="img/hand.png" alt="">
+                    </div>
+                </div>
+                <div class="h1" id="winORlose" style="font-size: 15px;"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-card">
+                <button class="rock" onclick="userRock()">
+                    <img src="img/rock.png" alt="">
+                </button>
+                <button class="paper" onclick="userPaper()">
+                    <img src="img/paper.png" alt="">
+                </button>
+                <button class="scissors" onclick="userScissors()">
+                    <img src="img/scissors.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
